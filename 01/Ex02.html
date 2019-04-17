@@ -6,3 +6,35 @@ Depois disso  calcule e mostre no console:
 a) O valor dos 10% (cota do garçom)
 b) O valor final da conta (consumo + 10%)
 c) O valor que cada cliente deve pagar -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Exercício 02
+    </h1>
+    <script>
+    var conta = Number (prompt("Digite o valor da conta: "));
+    console.log ("O valor da conta é: ", conta)
+
+    var cliente = Number (prompt ("Digite o número de clientes na mesa: "));
+    console.log ("O número de clientes é: ", cliente);
+
+    var cotaGarcom = Number (conta * 0.1);
+    console.log ("O valor da cota do garçom é: ", cotaGarcom);
+    
+    var consumo = (conta + cotaGarcom);
+    console.log ("O valor do consumo é: ", consumo);
+
+    var contaDividida = (consumo/cliente);
+    console.log ("O valor da conta dividida é: ", contaDividida);
+
+    </script>
+</body>
+</html>
