@@ -7,6 +7,7 @@ Exemplo de saída:
     À vista: R$ 54.00
     Ou 3x de: R$ 20.00 -->
 
+<<<<<<< HEAD
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -26,3 +27,13 @@ Exemplo de saída:
         </script>
     </body>
     </html>
+=======
+<meta charset="UTF-8">
+<script>
+    var valorProduto = 60;
+    console.log('Preço: R$ ' + valorProduto.toFixed(2));
+    console.log('À vista: R$ ' + valorProduto*0.90);
+    console.log('À vista: R$ ', (valorProduto - (valorProduto*10/100)).toFixed(2));
+    console.log('Ou 3x de: R$ ', (valorProduto/3).toFixed(2));
+</script>
+>>>>>>> 59368df4e577f79a47761ef1ef2bcfb896dda4d3

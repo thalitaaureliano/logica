@@ -1,4 +1,3 @@
-var mensagem = document.querySelector('.mensagem');
 var botao = document.querySelector('.button');
 botao.addEventListener('click', function(evento){
     evento.preventDefault();
@@ -17,10 +16,9 @@ botao.addEventListener('click', function(evento){
     } else {
         mensagem.textContent = 'O e-mail ' + email.value +'foi cadastrado.'
     }
-    
+    var senha = document.querySelector('#loginInputPassword');
+    if(senha.value == "" || senha.value.length <6 ) {
+        mensagem.textContent = 'Digite uma senha com mais de 6 caracteres.'
+        return
+    }
 })
-
-
-
-
-
